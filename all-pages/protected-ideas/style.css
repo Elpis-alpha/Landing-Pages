@@ -129,13 +129,16 @@ html{
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+  color: #383668;
 }
 
 body{
+  padding: 0 1rem;
   min-height: 100vh;
-  font-size: .8rem;
-  line-height: 1.6rem;
-  font-family: 'Footlight';
+  font-size: .9rem;
+  line-height: 2rem;
+  /* font-family: 'Footlight'; */
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 div.site-topper{
@@ -203,7 +206,7 @@ div.main-content{
 /* Custom Scroll bar */
 
 ::-webkit-scrollbar {
-  width: 7px;
+  width: 3px;
 }
 
 /* Track */
@@ -394,3 +397,106 @@ div.main-content{
 
 /* ------------------------------------------------------------------ */
 
+.site-topper{
+  background-color: #ffffff;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav h1{
+  font-size: 2rem;
+  line-height: 3rem;
+  padding: 2rem;
+}
+
+nav ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+}
+
+nav ul li{
+  margin: 0 .5rem;
+  display: inline-block;
+  border-radius: 1rem;
+  transition: background-color .5s, color .3s;
+}
+
+nav ul li:hover{
+  background-color: #c7c8e8;
+  color: white;
+}
+
+nav ul li.active{
+  background-color: #aaabe7;
+  color: white;
+}
+
+nav ul li a{
+  padding: .2rem .7rem;
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.splitted{
+  display: flex;  
+  padding: 1rem 2rem;
+  flex: 1;
+  width: 100%;
+}
+
+.splitted .left-side{
+  width: 40%;
+  display: flex;
+}
+
+.splitted .left-side .content{
+  margin: auto;
+}
+
+.splitted .left-side h1{
+  font-size: 3.5rem;
+  line-height: 5rem;
+  padding-bottom: .5rem;
+}
+
+.splitted .left-side p{
+  font-size: .8rem;
+  line-height: 2rem;
+  padding-bottom: .5rem;
+}
+
+.splitted .left-side button{
+  font-size: .8rem;
+  border: 0 none;
+  outline: 0 none;
+  cursor: pointer;
+  background-color: #adade9;
+  transition: background-color .5s;
+  padding: .3rem 1.5rem;
+  color: white;
+  border-radius: 2rem;
+}
+
+.splitted .left-side button:hover{
+  background-color: #cce9f1;
+}
+
+.splitted .right-side{
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.splitted .right-side img{
+  max-height: 80%;
+  max-width: 80%;
+  object-fit: contain;
+}
