@@ -45,6 +45,20 @@
 
         <ul>
 
+          <div class="nav-ham">
+
+            <div class="el-nav-holder">
+
+              <div class="bar-1"></div>
+
+              <div class="bar-2"></div>
+
+              <div class="bar-3"></div>
+
+            </div>
+
+          </div>
+
           <li><a href="/">Home</a></li>
 
           <li><a href="/">About us</a></li>
@@ -124,22 +138,31 @@
 
       item.addEventListener('click', (e) => {
 
-        const navHolder = e.currentTarget
+        allNavs.forEach(navHolder => {
 
-        if (navHolder.classList.contains('change-to-x')) {
+          if (navHolder.classList.contains('change-to-x')) {
 
-          navHolder.classList.add("change-to-def");
+            navHolder.classList.add("change-to-def");
 
-          navHolder.classList.remove("change-to-x");
+            navHolder.classList.remove("change-to-x");
 
-        } else {
+            navHolder.parentElement.parentElement.classList.remove("show-navv");
 
-          navHolder.classList.add("change-to-x");
+            navHolder.parentElement.parentElement.classList.add("hide-navv");
 
-          navHolder.classList.remove("change-to-def");
+          } else {
 
-        }
+            navHolder.classList.add("change-to-x");
 
+            navHolder.classList.remove("change-to-def");
+
+            navHolder.parentElement.parentElement.classList.add("show-navv");
+
+            navHolder.parentElement.parentElement.classList.remove("hide-navv");
+
+          }
+
+        })
 
       })
 

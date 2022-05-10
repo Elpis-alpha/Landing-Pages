@@ -449,16 +449,72 @@ nav .res-nev{
   display: none;
 }
 
+nav ul .nav-ham{
+  display: none;
+}
+
+@keyframes slide-navv {
+
+  from{
+    right: 0vw;
+  }
+
+  to{
+    right: 102vw;
+  }
+  
+}
+
+@keyframes slide-navx {
+  
+  from{
+    right: 102vw;
+  }
+
+  to{
+    right: 0vw;
+  }
+  
+}
+
 @media screen and (max-width: 800px) {
 
   nav ul{
-    display: none;
+    position: fixed;
+    top: 0; bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    right: 102vw;
+    z-index: 600;
+    background-color: #9c9bb4;
+    flex-direction: column;
+  }
+
+  nav ul li{
+    margin: .5rem 0.5rem;
+  }
+
+  nav.hide-navv ul{
+    right: 102vw;
+    animation: slide-navv 1s 1;
+  }
+  
+  nav.show-navv ul{
+    right: 0vw;
+    animation: slide-navx 1s 1;
+  }
+
+  nav ul .nav-ham{
+    position: absolute;
+    top: 2rem; right: 2rem;
+    display: flex;
   }
   
   nav .mi-bars{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-right: 2rem;
   }
 }
 
