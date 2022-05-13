@@ -730,7 +730,7 @@ section.last .cards-b-items .card-b {
 }
 
 section.last .cards-b-items .card-b img {
-  width: 8rem;
+  width: 4rem;
 }
 
 section.last .cards-b-items .card-b p {
@@ -749,6 +749,12 @@ section.last .cards-b-items .card-b p {
   
   section.last .cards-b-items .card-b {
     width: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  section.last .cards-b-items .card-b img {
+    margin: auto;
   }
 
 }
