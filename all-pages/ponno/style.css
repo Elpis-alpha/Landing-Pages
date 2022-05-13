@@ -417,8 +417,8 @@ nav {
 }
 
 nav img {
-  padding: 1.5rem 0;
-  width: 10rem;
+  padding: 1rem 0;
+  width: 8rem;
 }
 
 nav ul {
@@ -444,9 +444,7 @@ nav ul li:hover {
 }
 
 nav ul li.spe {
-  background-color: #6bc25d;
-  color: white;
-  padding: .0rem 1.5rem;
+  color: #e73d4b;
 }
 
 nav ul li a {
@@ -502,7 +500,7 @@ nav ul .nav-ham {
     right: 0;
     z-index: 600;
     background-color: #e7e7e7;
-    background: radial-gradient(#fff, #6bc25d);
+    background: radial-gradient(#fff, #e73d4b);
     flex-direction: column;
   }
 
@@ -542,7 +540,7 @@ nav ul .nav-ham {
 }
 
 .splitted .left-side {
-  width: 40%;
+  width: 50%;
   display: flex;
   flex-direction: column;
 }
@@ -569,21 +567,23 @@ nav ul .nav-ham {
   border: 0 none;
   outline: 0 none;
   cursor: pointer;
-  background-color: #6bc25d;
-  transition: background-color .5s;
+  background-color: #fff;
+  font-weight: bold;
+  transition: background-color .5s, color .5s;
   padding: .1rem 1rem;
-  color: white;
+  color: #e73d4b;
   display: block;
   margin-right: auto;
   box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, .5);
 }
 
 .splitted .left-side button:hover {
-  background-color: #297a1d;
+  background-color: #e73d4b;
+  color: white;
 }
 
 .splitted .right-side {
-  width: 60%;
+  width: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -591,7 +591,7 @@ nav ul .nav-ham {
 
 .splitted .right-side img {
   max-height: 90%;
-  max-width: 90%;
+  max-width: 70%;
   width: 100%;
   object-fit: contain;
 }
@@ -647,13 +647,15 @@ section {
 }
 
 section.intro {
-  background-color: #fff;
-  max-width: 70vw;
+  background-color: #e73d4b;
+  padding: 5rem 15vw;
+  color: white;
   padding-bottom: 3rem;
+  width: 100%;
 }
 
 section.intro h1 {
-  padding-top: 2rem;
+  /* padding-top: 2rem; */
   font-size: 3rem;
   line-height: 4rem;
   width: 70vw;
@@ -666,20 +668,28 @@ section.intro p {
   margin: 0 auto;
 }
 
-section.second {
+@media screen and (max-width: 800px) {
+
+  section.intro {
+    padding: 5rem 10vw;
+  }
+  
+}
+
+@media screen and (max-width: 600px) {
+
+  section.intro {
+    padding: 5rem 7.5vw;
+  }
+  
+}
+
+section.last {
   padding: 4rem 0;
-  background-color: #f3f3f3;
+  background-color: #fff;
 }
 
-section.second>strong {
-  display: block;
-  width: 70vw;
-  text-align: center;
-  font-size: .8rem;
-  margin: 0 auto;
-}
-
-section.second h1 {
+section.last h1 {
   font-size: 2rem;
   line-height: 3rem;
   width: 70vw;
@@ -688,173 +698,115 @@ section.second h1 {
   padding: .5rem 0;
 }
 
-section.second p.top-l {
-  width: 50vw;
+section.last p.top-l {
+  width: 60vw;
   text-align: center;
   margin: 0 auto;
 }
 
-section.second .cards-w-items {
-  padding-top: 2rem;
+
+
+
+.splitted-x {
+  display: flex;
+  padding: 1rem 2rem;
+  flex: 1;
+  width: 100%;
+  align-items: center;
+}
+
+.splitted-x .left-side {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 5rem;
+}
+
+.splitted-x .left-side img {
+  width: 100%;
+}
+
+.splitted-x .right-side {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.splitted-x .right-side .parent-bi {
   display: flex;
   align-items: stretch;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 80vw;
+  width: 50%;
   margin: 0 auto;
 }
 
-section.second .cards-w-items .card-w {
-  text-align: left;
-  width: 22%;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  background-color: white;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
-}
-
-section.second .cards-w-items .card-w img {
-  display: block;
-  width: 2rem;
-  height: 2rem;
-  object-fit: contain;
-  margin-right: auto;
-}
-
-section.second .cards-w-items .card-w h2 {
-  padding: .8rem 0;
-  padding-top: 1.2rem;
-  font-size: 1.2rem;
-}
-
-section.second .cards-w-items .card-w p {
-  font-size: .8rem;
-}
-
-section.second .cards-w-items .card-w a {
-  text-decoration: none;
-  text-align: right;
+.splitted-x .right-side .parent-bi .card-w {
+  text-align: center;
   width: 100%;
+  padding: 1rem;
+  background-color: white;
+}
+
+.splitted-x .right-side .parent-bi:last-of-type .card-w:first-of-type {
+  padding-top: 4rem;
+}
+
+.splitted-x .right-side .parent-bi .card-w .in-si {
+  border: 2px solid #dab6b8;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.splitted-x .right-side .parent-bi .card-w .in-si img {
   display: block;
-  font-size: 1.5rem;
-  padding-right: .5rem;
+  width: 4rem;
+  height: 4rem;
+  object-fit: contain;
+  margin: auto;
 }
 
-@media screen and (max-width: 1000px) {
-  section.second .cards-w-items .card-w {
-    width: 48%;
-    text-align: center;
-    padding: 2rem 1rem;
-  }
-
-  section.second .cards-w-items .card-w img {
-    margin-left: auto;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  section.second .cards-w-items .card-w {
-    width: 100%;
-  }
-}
-
-section.third {
-  padding: 4rem 0;
-  background-color: #fff;
-  max-width: 70vw;
-}
-
-section.third .left-side h1 {
-  font-size: 1.5rem;
-  line-height: 3rem;
-  margin: 0 auto;
-}
-
-section.third p.top-l {
-  padding-top: .5rem;
-  font-size: .8rem;
-}
-
-section.fourth {
-  padding: 0;
-  background-color: #f9f9f9;
-  /* max-width: 70vw; */
-}
-
-section.fourth .splitted {
-  padding: 0 0;
-}
-
-section.fourth .left-side {
-  padding: 0 2rem;
-}
-
-section.fourth .left-side h1 {
+.splitted-x .right-side .parent-bi .card-w .in-si h2 {
+  padding-bottom: .5rem ;
+  padding-top: .8rem;
   font-size: 1.2rem;
-  line-height: 3rem;
-  margin: 0 auto;
 }
 
-section.fourth .right-side img {
-  max-width: 100%;
-}
-
-section.fourth p.top-l {
-  padding-top: .5rem;
+.splitted-x .right-side .parent-bi .card-w .in-si p {
   font-size: .8rem;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 900px) {
 
-  section.fourth .splitted {
-    text-align: center;
-    padding: 3rem 0;
+  .splitted-x{
+    flex-direction: column;
+    padding: 2rem;
   }
 
-  section.fourth .splitted .left-side button {
-    margin-left: auto;
+  .splitted-x .right-side {
+    width: 80%;
   }
 
-  section.fourth .right-side img {
-    max-width: 50%;
+  .splitted-x .right-side .parent-bi:last-of-type .card-w:first-of-type {
+    padding-top: 1rem;
   }
-
+  
 }
 
-section.last {
-  padding: 4rem 0;
-  background-color: #fff;
+@media screen and (max-width: 650px) {
+
+  .splitted-x .right-side .parent-bi{
+    width: 80%;
+  }
+  
 }
 
-section.last img.owner {
-  width: 5rem;
-  display: block;
-  margin: 0 auto;
-}
+@media screen and (max-width: 550px) {
 
-section.last p.desc {
-  padding-top: .5rem;
-  width: 80vw;
-  text-align: center;
-  margin: 0 auto;
-}
-
-section.last .end-c {
-  padding-top: .5rem;
-  width: 80vw;
-  text-align: center;
-  margin: 0 auto;
-  font-weight: bold;
-}
-
-section.last .stars {
-  display: flex;
-  margin: 0 auto;
-  justify-content: center;
-  padding-top: .3rem;
-}
-
-section.last .stars img {
-  width: 1rem;
-  margin: 0 .1rem;
+  .splitted-x .left-side{
+    padding: 0;
+  }
+  
 }
