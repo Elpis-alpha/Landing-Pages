@@ -496,7 +496,8 @@ nav ul .nav-ham {
     bottom: 102vh;
     width: 100vw;
     height: 100vh;
-    left: 0; right: 0;
+    left: 0;
+    right: 0;
     z-index: 600;
     background-color: #e7e7e7;
     background: linear-gradient(135deg, #fff, #ccc);
@@ -519,8 +520,7 @@ nav ul .nav-ham {
 
   nav ul .nav-ham {
     position: absolute;
-    top: 2rem;
-    right: 2rem;
+    top: 5rem; right: 3rem;
     display: flex;
   }
 
@@ -589,7 +589,7 @@ section.intro .end-img img {
   margin: 0 auto;
 }
 
-.transit-01{
+.transit-01 {
   background: linear-gradient(to bottom, #f3f2f4, #fff);
   height: 1rem;
   width: 100%;
@@ -600,7 +600,7 @@ section.second {
   background-color: #fff;
 }
 
-section.second  h1 {
+section.second h1 {
   font-size: 2.2rem;
   line-height: 3rem;
   width: 70vw;
@@ -627,7 +627,7 @@ section.third {
   background-color: #fff;
 }
 
-section.third  h1 {
+section.third h1 {
   font-size: 2.2rem;
   line-height: 3rem;
   width: 70vw;
@@ -697,7 +697,7 @@ section.last {
   background-color: #fff;
 }
 
-section.last  h1 {
+section.last h1 {
   font-size: 2.2rem;
   line-height: 3rem;
   width: 70vw;
@@ -738,7 +738,7 @@ section.last .cards-b-items .card-b p {
 }
 
 @media screen and (max-width: 1200px) {
-  
+
   section.last .cards-b-items .card-b {
     width: 50%;
   }
@@ -746,13 +746,13 @@ section.last .cards-b-items .card-b p {
 }
 
 @media screen and (max-width: 950px) {
-  
+
   section.last .cards-b-items .card-b {
     width: 100%;
     flex-direction: column;
     text-align: center;
   }
-  
+
   section.last .cards-b-items .card-b img {
     margin: auto;
   }

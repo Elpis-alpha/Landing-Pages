@@ -506,7 +506,7 @@ nav ul .nav-ham{
 
   nav ul .nav-ham{
     position: absolute;
-    top: 2rem; right: 2rem;
+    top: 5rem; right: 3rem;
     display: flex;
   }
   
