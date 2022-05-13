@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: 'Main';
-  src: url("/assets/fonts/Roboto-Medium.ttf");
+  src: url("/assets/fonts/Roboto-Light.ttf");
 }
 
 /* Fonts Used End */
@@ -133,7 +133,8 @@ body {
   line-height: 2rem;
   font-family: 'Main';
   background-color: #f0f0f0;
-  color: #181818;
+  color: hsl(200deg 7% 16%);
+  background-color: #fff;
 }
 
 div.site-topper {
@@ -411,12 +412,13 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 70vw;
+  margin: 0 auto;
 }
 
-nav h1 {
-  font-size: 2rem;
-  line-height: 3rem;
-  padding: 2rem;
+nav img {
+  padding: 2rem 0;
+  width: 10rem;
 }
 
 nav ul {
@@ -424,10 +426,11 @@ nav ul {
   align-items: center;
   justify-content: center;
   list-style-type: none;
+  font-size: .8rem;
 }
 
 nav ul li {
-  margin: 0 .5rem;
+  margin: 0 .7rem;
   display: inline-block;
   border-radius: 1.5rem;
   text-transform: uppercase;
@@ -435,17 +438,16 @@ nav ul li {
 }
 
 nav ul li:hover {
-  background-color: #c7c8e8;
-  color: white;
+  color: green;
 }
 
-nav ul li.active {
-  background-color: #aaabe7;
+nav ul li.spe {
+  background-color: #f1874d;
   color: white;
+  padding: .0rem 2rem;
 }
 
 nav ul li a {
-  padding: .2rem .8rem;
   display: inline-block;
   text-decoration: none;
   color: inherit;
@@ -466,11 +468,11 @@ nav ul .nav-ham {
 @keyframes slide-navv {
 
   from {
-    right: 0vw;
+    bottom: 0vh;
   }
 
   to {
-    right: 102vw;
+    bottom: 102vh;
   }
 
 }
@@ -478,26 +480,26 @@ nav ul .nav-ham {
 @keyframes slide-navx {
 
   from {
-    right: 102vw;
+    bottom: 102vh;
   }
 
   to {
-    right: 0vw;
+    bottom: 0vh;
   }
 
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1100px) {
 
   nav ul {
     position: fixed;
-    top: 0;
-    bottom: 0;
+    bottom: 102vh;
     width: 100vw;
     height: 100vh;
-    right: 102vw;
+    left: 0; right: 0;
     z-index: 600;
-    background-color: #9c9bb4;
+    background-color: #e7e7e7;
+    background: linear-gradient(135deg, #fff, #ccc);
     flex-direction: column;
   }
 
@@ -506,12 +508,12 @@ nav ul .nav-ham {
   }
 
   nav.hide-navv ul {
-    right: 102vw;
+    bottom: 102vh;
     animation: slide-navv 1s 1;
   }
 
   nav.show-navv ul {
-    right: 0vw;
+    bottom: 0vh;
     animation: slide-navx 1s 1;
   }
 
@@ -526,14 +528,227 @@ nav ul .nav-ham {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-right: 2rem;
   }
+}
+
+section {
+  width: 100%;
 }
 
 section.intro {
   background-color: #ebedf2;
+  background: linear-gradient(to bottom, #ebedf2, #f3f2f4);
 }
 
 section.intro h1 {
   padding-top: 2rem;
+  font-size: 3rem;
+  line-height: 4rem;
+  width: 70vw;
+  text-align: center;
+  margin: 0 auto;
+}
+
+section.intro p {
+  padding-top: .5rem;
+  width: 50vw;
+  text-align: center;
+  margin: 0 auto;
+}
+
+section.intro button {
+  background-color: hsl(217deg 83% 60%);
+  outline: 0 none;
+  border: 2px solid hsl(217deg 83% 60%);
+  color: white;
+  margin: 1rem auto;
+  margin-top: 1rem;
+  padding: 0rem 5rem;
+  display: flex;
+  align-items: center;
+  border-radius: 5rem;
+  cursor: pointer;
+  transition: background-color .5s, color .5s, border-color .5s;
+}
+
+section.intro button:hover {
+  background-color: green;
+  border-color: green;
+}
+
+section.intro button img {
+  height: 1.5rem;
+  display: inline-block;
+  padding: 0 .7rem;
+}
+
+section.intro .end-img img {
+  width: 100%;
+  max-width: 1000px;
+  display: block;
+  margin: 0 auto;
+}
+
+.transit-01{
+  background: linear-gradient(to bottom, #f3f2f4, #fff);
+  height: 1rem;
+  width: 100%;
+}
+
+section.second {
+  padding: 4rem 0;
+  background-color: #fff;
+}
+
+section.second  h1 {
+  font-size: 2.2rem;
+  line-height: 3rem;
+  width: 70vw;
+  text-align: center;
+  margin: 0 auto;
+}
+
+section.second p {
+  padding-top: .5rem;
+  width: 50vw;
+  text-align: center;
+  margin: 0 auto;
+}
+
+section.second .end-img img {
+  max-width: 50%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+section.third {
+  padding: 4rem 0;
+  background-color: #fff;
+}
+
+section.third  h1 {
+  font-size: 2.2rem;
+  line-height: 3rem;
+  width: 70vw;
+  text-align: center;
+  margin: 0 auto;
+}
+
+section.third p.top-l {
+  padding-top: .5rem;
+  width: 50vw;
+  text-align: center;
+  margin: 0 auto;
+}
+
+section.third .cards-w-items {
+  padding-top: 2rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 80vw;
+  margin: 0 auto;
+}
+
+section.third .cards-w-items .card-w {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+section.third .cards-w-items .card-w img {
+  display: block;
+  margin: 0 auto;
+}
+
+section.third .cards-w-items .card-w h2 {
+  padding: 1rem 0;
+}
+
+section.third .cards-w-items .card-w p {
+  font-size: .8rem;
+}
+
+section.third .cards-w-items .after-card-w {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  align-self: center;
+}
+
+section.third .cards-w-items .after-card-w i {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+@media screen and (max-width: 950px) {
+  section.third .cards-w-items .after-card-w {
+    display: none;
+  }
+
+  section.third .cards-w-items {
+    flex-direction: column;
+  }
+}
+
+section.last {
+  padding: 4rem 0;
+  background-color: #fff;
+}
+
+section.last  h1 {
+  font-size: 2.2rem;
+  line-height: 3rem;
+  width: 70vw;
+  text-align: center;
+  margin: 0 auto;
+}
+
+section.last p.top-l {
+  padding-top: .5rem;
+  width: 50vw;
+  text-align: center;
+  margin: 0 auto;
+}
+
+section.last .cards-b-items {
+  padding-top: 2rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 80vw;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+section.last .cards-b-items .card-b {
+  width: 33%;
+  padding: 1rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+section.last .cards-b-items .card-b img {
+  width: 8rem;
+}
+
+section.last .cards-b-items .card-b p {
+  font-size: .8rem;
+}
+
+@media screen and (max-width: 1200px) {
+  
+  section.last .cards-b-items .card-b {
+    width: 50%;
+  }
+
+}
+
+@media screen and (max-width: 950px) {
+  
+  section.last .cards-b-items .card-b {
+    width: 100%;
+  }
+
 }
