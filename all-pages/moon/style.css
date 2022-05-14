@@ -470,11 +470,11 @@ nav ul .nav-ham {
 @keyframes slide-navv {
 
   from {
-    bottom: 0vh;
+    top: 0vh;
   }
 
   to {
-    bottom: 102vh;
+    top: -102vh;
   }
 
 }
@@ -482,11 +482,11 @@ nav ul .nav-ham {
 @keyframes slide-navx {
 
   from {
-    bottom: 102vh;
+    top: -102vh;
   }
 
   to {
-    bottom: 0vh;
+    top: 0vh;
   }
 
 }
@@ -495,7 +495,7 @@ nav ul .nav-ham {
 
   nav ul {
     position: fixed;
-    bottom: 102vh;
+    top: -102vh;
     width: 100vw;
     height: 100vh;
     left: 0;
@@ -511,18 +511,19 @@ nav ul .nav-ham {
   }
 
   nav.hide-navv ul {
-    bottom: 102vh;
+    top: -102vh;
     animation: slide-navv 1s 1;
   }
 
   nav.show-navv ul {
-    bottom: 0vh;
+    top: 0vh;
     animation: slide-navx 1s 1;
   }
 
   nav ul .nav-ham {
     position: absolute;
-    top: 5rem; right: 3rem;
+    top: 4rem;
+    right: 3rem;
     display: flex;
   }
 

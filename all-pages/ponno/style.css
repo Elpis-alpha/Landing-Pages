@@ -468,11 +468,11 @@ nav ul .nav-ham {
 @keyframes slide-navv {
 
   from {
-    bottom: 0vh;
+    top: 0vh;
   }
 
   to {
-    bottom: 102vh;
+    top: -102vh;
   }
 
 }
@@ -480,11 +480,11 @@ nav ul .nav-ham {
 @keyframes slide-navx {
 
   from {
-    bottom: 102vh;
+    top: -102vh;
   }
 
   to {
-    bottom: 0vh;
+    top: 0vh;
   }
 
 }
@@ -493,7 +493,7 @@ nav ul .nav-ham {
 
   nav ul {
     position: fixed;
-    bottom: 102vh;
+    top: -102vh;
     width: 100vw;
     height: 100vh;
     left: 0;
@@ -509,18 +509,19 @@ nav ul .nav-ham {
   }
 
   nav.hide-navv ul {
-    bottom: 102vh;
+    top: -102vh;
     animation: slide-navv 1s 1;
   }
 
   nav.show-navv ul {
-    bottom: 0vh;
+    top: 0vh;
     animation: slide-navx 1s 1;
   }
 
   nav ul .nav-ham {
     position: absolute;
-    top: 5rem; right: 3rem;
+    top: 4rem;
+    right: 3rem;
     display: flex;
   }
 
@@ -673,7 +674,7 @@ section.intro p {
   section.intro {
     padding: 5rem 10vw;
   }
-  
+
 }
 
 @media screen and (max-width: 600px) {
@@ -681,7 +682,7 @@ section.intro p {
   section.intro {
     padding: 5rem 7.5vw;
   }
-  
+
 }
 
 section.last {
@@ -769,7 +770,7 @@ section.last p.top-l {
 }
 
 .splitted-x .right-side .parent-bi .card-w .in-si h2 {
-  padding-bottom: .5rem ;
+  padding-bottom: .5rem;
   padding-top: .8rem;
   font-size: 1.2rem;
 }
@@ -780,7 +781,7 @@ section.last p.top-l {
 
 @media screen and (max-width: 900px) {
 
-  .splitted-x{
+  .splitted-x {
     flex-direction: column;
     padding: 2rem;
   }
@@ -792,21 +793,21 @@ section.last p.top-l {
   .splitted-x .right-side .parent-bi:last-of-type .card-w:first-of-type {
     padding-top: 1rem;
   }
-  
+
 }
 
 @media screen and (max-width: 650px) {
 
-  .splitted-x .right-side .parent-bi{
+  .splitted-x .right-side .parent-bi {
     width: 80%;
   }
-  
+
 }
 
 @media screen and (max-width: 550px) {
 
-  .splitted-x .left-side{
+  .splitted-x .left-side {
     padding: 0;
   }
-  
+
 }

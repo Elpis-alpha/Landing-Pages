@@ -483,7 +483,6 @@ nav ul .nav-ham{
     position: fixed;
     top: 0; bottom: 0;
     width: 100vw;
-    height: 100vh;
     right: 102vw;
     z-index: 600;
     background-color: #9c9bb4;
@@ -506,7 +505,7 @@ nav ul .nav-ham{
 
   nav ul .nav-ham{
     position: absolute;
-    top: 5rem; right: 3rem;
+    top: 4rem; right: 3rem;
     display: flex;
   }
   
