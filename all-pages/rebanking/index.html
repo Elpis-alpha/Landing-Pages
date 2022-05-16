@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="author" content="Elpis" />
+
+  <meta name="publisher" content="Elpis" />
+
+  <meta name='robots' content='all' />
+
+  <meta name="theme-color" content="#f5f5f5" />
+
+  <title>Rebanking by Elpis</title>
+
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+  <meta name="description"
+    content="Rebanking, One of the landing pages created by Elpis though obtained the design from google">
+
+  <link rel="icon" href="/favicon.ico" />
+
+  <link rel="apple-touch-icon" href="/logo192.png" />
+
+  <link rel="stylesheet" href="./style.css">
+
+  <link rel="stylesheet" href="/svg.css">
+
+</head>
+
+<body>
+
+  <div class="big-wrapper">
+
+    <div class="site-topper">
+
+      <nav>
+
+        <h1><img src="./assets/images/logo.png" alt="item logo" title="Rebanking Logo"></h1>
+
+        <ul>
+
+          <div class="nav-ham">
+
+            <div class="el-nav-holder">
+
+              <div class="bar-1"></div>
+
+              <div class="bar-2"></div>
+
+              <div class="bar-3"></div>
+
+            </div>
+
+          </div>
+
+          <li><a href="/">Quienes Somos</a></li>
+
+          <li><a href="/">Productos</a></li>
+
+          <li><a href="/">Comunidad</a></li>
+
+          <li><a href="/">Seguridad</a></li>
+
+          <li><a href="/">FAQs</a></li>
+
+          <li class="active"><a href="/">Descargar App</a></li>
+
+        </ul>
+
+        <div class="mi-bars">
+
+          <div class="el-nav-holder">
+
+            <div class="bar-1"></div>
+
+            <div class="bar-2"></div>
+
+            <div class="bar-3"></div>
+
+          </div>
+
+        </div>
+
+      </nav>
+
+    </div>
+
+    <main>
+
+      <div class="main-content">
+
+        <div class="splitted">
+
+          <div class="left-side">
+
+            <div class="content">
+
+              <h1>La Banca Digital del Grupo Transatlantica</h1>
+
+              <p>
+
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam corrupti accusantium eveniet
+
+                provident id pariatur modi laborum.
+
+              </p>
+
+              <div class="btn">
+
+                <button>
+
+                  <img src="./assets/images/mac-os.png" alt="Image of an eaten apple" title="Image of an eaten apple">
+
+                  <span>
+
+                    <span class="small">Connsiguelo en el</span>
+
+                    <span class="big">App Store</span>
+
+                  </span>
+
+                </button>
+
+                <button>
+
+                  <img src="./assets/images/google-play.png" alt="Image of an google play logo" title="Image of an google play logo">
+
+                  <span>
+
+                    <span class="small">DISPONIBLE  EN</span>
+
+                    <span class="big">Google Play</span>
+
+                  </span>
+
+                </button>
+
+              </div>
+
+
+            </div>
+
+          </div>
+
+          <div class="right-side">
+
+            <img src="./assets/images/whole.png" alt="an image of a guy and a girl carrying a shield"
+              title="an image of a guy and a girl carrying a shield">
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <img src="./assets/images/m-down.png" alt="Scroll Down" title="Click to Scroll Down" class="spe-m-sc-dn">
+
+    </main>
+
+  </div>
+
+  <script>
+
+    const allNavs = Array.from(document.querySelectorAll('.el-nav-holder'))
+
+    allNavs.forEach(item => {
+
+      item.addEventListener('click', (e) => {
+
+        allNavs.forEach(navHolder => {
+
+          if (navHolder.classList.contains('change-to-x')) {
+
+            navHolder.classList.add("change-to-def");
+
+            navHolder.classList.remove("change-to-x");
+
+            navHolder.parentElement.parentElement.classList.remove("show-navv");
+
+            navHolder.parentElement.parentElement.classList.add("hide-navv");
+
+          } else {
+
+            navHolder.classList.add("change-to-x");
+
+            navHolder.classList.remove("change-to-def");
+
+            navHolder.parentElement.parentElement.classList.add("show-navv");
+
+            navHolder.parentElement.parentElement.classList.remove("hide-navv");
+
+          }
+
+        })
+
+      })
+
+    })
+
+  </script>
+
+</body>
