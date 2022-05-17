@@ -1006,4 +1006,7 @@ section.outro .end-c {
     margin-bottom: 2rem;
   }
 
+  section.pages a.page-anchor:hover {
+    transform: scale(1.05);
+  }
 }
