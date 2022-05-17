@@ -2661,6 +2661,14 @@ const App = (function () {
 
   const loadInit = async function () {
 
+    console.log('Some designs were gotten from: https://business.tutsplus.com/');
+
+    console.log('Some designs were gotten from: dribble');
+
+    console.log('The remaining designs are from gooogle images');
+
+    console.log('Icons are on Font Awesome');
+
   }
 
   const coreInit = function () {
@@ -2785,14 +2793,6 @@ const App = (function () {
 
       // 1. Give it a class of "el-nav-holder"
       // 2. Put three divs of classes bar-1, bar-2, bar-3
-    }
-
-
-    // Set Footer Display
-    const footerDisplayer = () => {
-
-      UICtrl.toggleWithDocument(UIVariables.contactButton, UIVariables.footerSVGS, 'show')
-
     }
 
 
@@ -3106,11 +3106,10 @@ const App = (function () {
 
     animateScrollItems(); haminizeNavs()
 
-    footerDisplayer(); linkScroller()
+    linkScroller(); accordinate();
 
-    accordinate(); customSelect()
+    customSelect(); includeHTML();
 
-    includeHTML();
   }
 
   return {
@@ -3127,3 +3126,7 @@ const App = (function () {
     }
   }
 })()
+
+
+// Initialize Application
+document.addEventListener('DOMContentLoaded', App.init())
